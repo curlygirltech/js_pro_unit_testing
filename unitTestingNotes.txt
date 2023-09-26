@@ -1,0 +1,32 @@
+Test File Name Syntax- Usually named w/ file that has the functions you're testing
+then adding .spec or .test 
+Example- helper.spec.js or helper.test.js
+
+Give function an input and test for the expected output
+What do we expect the funtion to do? => confirm that output is met 
+
+
+3 parts of a Unit test 
+
+describe =  what you're testing (func or component)
+it = what does it do?
+expect = what is the expected output with a specificied input?
+
+Starting out the test
+Describe/it block is the syntax for Jest tests, it usually has the name of func or component
+with a callback function that has the "it" block which holds what you're testing.
+Be descriptive the it block serves as documentation and allows others to easily see what you're testing for!
+
+
+
+Describe('funcName', ()=>{
+ it('has expected output',()=>{
+  const input = [1,2,3]
+
+  expect(funcName(input)).toEqual(output) you expect your func or component to give you give you an output w/ an expected input
+  expect(funcName(input)).toHaveLength(10) this should be a number since you're looking for length
+ })
+})
+
+expect
+there are a bunch of methods you can use with jest- toBeCalled, toEqual, toHaveLength etc.
